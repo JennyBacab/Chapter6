@@ -1,4 +1,4 @@
-# Chapter6
+## Chapter6
 
 # First Exercise
 
@@ -38,4 +38,46 @@ int main(void) {
 
   return 0;
   
+}
+
+# Second Exercise
+
+#include <stdio.h>
+
+#include<math.h>
+
+
+int main(void) {
+
+  int numgrade;
+  
+ printf("This program converts numeric grades to letter grades. Please insert a numeric grade\n");
+ 
+ scanf("%int", &numgrade);
+ 
+ if (numgrade <=60){
+
+
+    printf("Letter grade is F\n");
+    
+} else if (numgrade>=61 && numgrade<=70){
+
+    printf("Letter grade is D\n");
+    
+} else if (numgrade>=70 && numgrade<=80){
+
+    printf("Letter grade is C\n");
+    
+} else if (numgrade>=81 && numgrade<=90){
+
+    printf("Letter grade is B\n");
+    
+} else if (numgrade>=90 && numgrade<=100){
+
+    printf("Letter grade is A\n");
+    
+}
+
+return 0;
+
 }
