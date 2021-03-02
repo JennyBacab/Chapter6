@@ -153,3 +153,43 @@ if (numgrade <=60){
 return 0;
 
 }
+
+# Fourth Exercise
+
+#include <stdio.h>
+
+
+int main(void){
+
+ float moneydollars;
+ 
+ printf("Please insert the money quantity in dollars\n");
+ 
+
+ scanf("%f", &moneydollars);
+ 
+ int money = moneydollars* 100;
+ 
+
+ int quarters = money/25;
+ 
+ int moneyleft = money%25;
+ 
+ int dimes = moneyleft/10;
+ 
+ int moneystillleft = moneyleft%10;
+ 
+ int nickels = moneystillleft/5;
+ 
+ int lastmoney = moneystillleft%5;
+ 
+  
+  printf("The money can be divided into %i quarter(s), %i dime(s), %i nickel(s) and %i penny/pennies\n", quarters, dimes, nickels, lastmoney);
+  
+
+
+return 0;
+
+
+} 
+
