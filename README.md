@@ -284,3 +284,48 @@ int main(void) {
   return 0;
   
 }
+
+# Exercise 7 - Original
+
+#include <stdio.h>
+
+
+int main(void) {
+
+  int number;
+  
+  printf("This program will tell you if a number is a multiple of five, a multiple of two, or a multiple of both\n");
+  
+  scanf("%i", &number);
+  
+  int mult5 = number%5;
+  
+  int mult2 = number%2;
+  
+  if ((mult5==0)&&(mult2==0)){
+  
+    printf("%i is both a multiple of both 5 and 2",number);
+    
+  }
+  else if (mult2==0){
+  
+    printf("%i is a multiple of 2 but not of five", number);
+    
+  }
+  
+  else if(mult5==0){
+  
+    printf("%i is a multiple of five but not of two", number);
+    
+  }
+  
+  else{
+  
+    printf("%i is not a multiple of neither two nor five",number);
+    
+  }
+  
+
+  return 0;
+  
+}
