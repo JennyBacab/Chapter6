@@ -236,3 +236,51 @@ int main(void) {
   return 0;
   
 }
+
+# Exercise 6
+
+#include <stdio.h>
+
+
+int main(void) {
+
+  float hours;
+  
+  float hourlywage;
+  
+  float weeklypay;
+  
+  int extratime;
+  
+  printf("This program will tell you the weekly pay of an employee given their hourly salary and hours worked\n");
+  
+  printf("Please insert worker's hourly wage\n");
+  
+  scanf("%f", &hourlywage);
+  
+  printf("Please insert number of hours worked\n");
+  
+  scanf("%f", &hours);
+  
+  if(hours<=40){
+  
+  weeklypay = hourlywage* hours;
+  
+  printf("The weekly pay is %f", weeklypay);
+  
+  }
+  
+  else{
+  
+  extratime = hours-40;
+  
+  weeklypay = hourlywage* 40 + extratime* hourlywage* 1.5;
+  
+  printf("The weekly pay is %f", weeklypay);
+  
+  }
+
+
+  return 0;
+  
+}
