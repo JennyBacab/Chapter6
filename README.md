@@ -193,3 +193,46 @@ return 0;
 
 } 
 
+# Exercise 5
+#include <stdio.h>
+
+
+int main(void) {
+
+  int year;
+  
+  printf("This program will tell you if a year is a leap year\n");
+  
+  printf("Please insert a year\n");
+  
+  scanf("%i", &year);
+  
+  int test100 = year%100;
+  
+  int test400 = year%400;
+  
+  int test4 = year%4;
+  
+  if(test4!=0){
+  
+    printf("%i is not a leap year", year);
+    
+  }
+  
+  else if ((test100 == 0)&&(test400!=0)){
+  
+  printf("%i is not a leap year", year);
+  
+  }
+  
+  else
+  
+  {
+  
+  printf("%i is a leap year", year);
+  
+  }
+  
+  return 0;
+  
+}
